@@ -4,7 +4,7 @@ const team = [
     position: "Group Leader",
     institute: "Sri Lanka Institute of Information Technology (SLIIT).",
     department: "BSc (Hons) in Information Technology",
-    image: "/team/charuka.jpeg",
+    image: "/team/Chami.png",
   },
   {
     name: "Madusanka R.R.V",
@@ -22,7 +22,7 @@ const team = [
     name: "Wanigasinghe C.P",
     institute: "Sri Lanka Institute of Information Technology (SLIIT).",
     department: "BSc (Hons) in Information Technology",
-    image: "/team/Chami.png",
+    image: "/team/charuka.jpeg",
   },
 ];
 
