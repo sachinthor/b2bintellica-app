@@ -12,9 +12,11 @@ const documentGroups = [
       { title: "Research Paper", submitted: "Upload in progress", type: "Group" },
       {
         title: "Final Report",
-        submitted: "Available now",
-        type: "Group",
-        href: "/docs/Website.pdf",
+        submitted: "2023/10/13",
+        downloads: [
+          { type: "Group", href: "/docs/Website.pdf" },
+          { type: "Individual", href: "/docs/Website.pdf" },
+        ],
       },
     ],
   },
@@ -76,29 +78,42 @@ export default function Documents() {
               </div>
 
               <div className="download-list">
-                {group.rows.map((row) => (
-                  <article key={row.title} className="download-row">
-                    <div>
-                      <h4>{row.title}</h4>
-                      <p>Submitted on {row.submitted}</p>
-                    </div>
-                    <span>{row.type}</span>
-                    {row.href ? (
-                      <a
-                        href={row.href}
-                        className="download-button"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Open file
-                      </a>
-                    ) : (
-                      <span className="download-button download-button-muted">
-                        Coming soon
-                      </span>
-                    )}
-                  </article>
-                ))}
+                {group.rows.map((row) => {
+                  const downloads = row.downloads ?? [
+                    { type: row.type, href: row.href },
+                  ];
+
+                  return (
+                    <article key={row.title} className="download-row">
+                      <div className="download-card-header">
+                        <h4>{row.title}</h4>
+                        <p>Submitted on {row.submitted}</p>
+                      </div>
+
+                      <div className="download-actions">
+                        {downloads.map((item) => (
+                          <div key={item.type} className="download-action-row">
+                            <span>{item.type}</span>
+                            {item.href ? (
+                              <a
+                                href={item.href}
+                                className="download-button"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                Download
+                              </a>
+                            ) : (
+                              <span className="download-button download-button-muted">
+                                Coming soon
+                              </span>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </article>
+                  );
+                })}
               </div>
             </section>
           ))}

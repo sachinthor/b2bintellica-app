@@ -1155,18 +1155,25 @@ div[id] {
 
 .download-list {
   display: grid;
-  gap: 0.8rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
   margin-top: 1rem;
 }
 
 .download-row {
-  grid-template-columns: minmax(0, 1fr) auto auto;
-  gap: 1rem;
-  align-items: center;
-  padding: 1rem;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: rgba(10, 10, 10, 0.54);
+  display: flex;
+  flex-direction: column;
+  min-height: 13rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(37, 99, 235, 0.28);
+  border-radius: 1.8rem;
+  background: linear-gradient(145deg, rgba(12, 18, 32, 0.96), rgba(7, 10, 18, 0.98));
+  color: #f8fafc;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.32);
+}
+
+.download-card-header {
+  padding-bottom: 1.25rem;
 }
 
 .download-row h4,
@@ -1176,21 +1183,65 @@ div[id] {
 
 .download-row h4 {
   color: #ffffff;
+  font-size: 1.25rem;
+  line-height: 1.2;
 }
 
-.download-row span {
+.download-row p {
+  margin-top: 0.8rem;
   color: var(--muted-strong);
-  font-weight: 700;
+  font-size: 1rem;
+}
+
+.download-actions {
+  display: grid;
+  margin-top: auto;
+  border-top: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.download-action-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: center;
+  min-height: 3rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.download-action-row:last-child {
+  border-bottom: 0;
+}
+
+.download-action-row span {
+  color: #e5edf7;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .download-button {
-  min-width: 8.5rem;
-  padding: 0.72rem 1rem;
+  min-width: auto;
+  min-height: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--cyan);
+  box-shadow: none;
+  font-size: 1rem;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .download-button-muted {
-  background: #262626;
-  color: var(--muted);
+  background: transparent;
+  color: #747b86;
+}
+
+.download-button:hover,
+.download-button:focus-visible {
+  transform: none;
+  background: transparent;
+  color: #67e8f9;
   box-shadow: none;
 }
 
@@ -1474,6 +1525,7 @@ div[id] {
   .supervisor-grid,
   .demo-panel,
   .presentation-grid,
+  .download-list,
   .timeline,
   .methodology-panel {
     grid-template-columns: 1fr;
@@ -1554,13 +1606,12 @@ div[id] {
     font-size: clamp(2.25rem, 12vw, 3.4rem);
   }
 
-  .download-row,
   .footer-shell {
     grid-template-columns: 1fr;
   }
 
   .download-button {
-    width: 100%;
+    width: auto;
   }
 
   .architecture-layer-items {
