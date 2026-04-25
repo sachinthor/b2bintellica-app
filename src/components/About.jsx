@@ -4,21 +4,25 @@ const team = [
     position: "Group Leader",
     institute: "Sri Lanka Institute of Information Technology (SLIIT).",
     department: "BSc (Hons) in Information Technology",
+    image: "/team/charuka.jpeg",
   },
   {
     name: "Madusanka R.R.V",
     institute: "Sri Lanka Institute of Information Technology (SLIIT).",
     department: "BSc (Hons) in Information Technology",
+    image: "/team/Rashmika.png",
   },
   {
     name: "Vithana V A S",
     institute: "Sri Lanka Institute of Information Technology (SLIIT).",
     department: "BSc (Hons) in Information Technology",
+    image: "/team/Subodhi.png",
   },
   {
     name: "Wanigasinghe C.P",
     institute: "Sri Lanka Institute of Information Technology (SLIIT).",
     department: "BSc (Hons) in Information Technology",
+    image: "/team/Chami.png",
   },
 ];
 
