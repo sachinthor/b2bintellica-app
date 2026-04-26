@@ -43,7 +43,7 @@ const milestones = [
   },
   {
     title: "Research Paper",
-    date: "April 2026",
+    date: "June 2026",
     description:
       "Research paper prepared to summarize the study, proposed solution, findings, and academic contribution.",
   },

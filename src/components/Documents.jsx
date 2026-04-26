@@ -15,7 +15,7 @@ const documentGroups = [
       { title: "Project Proposal", submitted: "Upload in progress", type: "Individual" },
       { title: "Status Document I", submitted: "Upload in progress", type: "Individual" },
       { title: "Status Document II", submitted: "Upload in progress", type: "Individual" },
-      { title: "Research Paper", submitted: "Upload in progress", type: "Group" },
+      { title: "Research Paper", submitted: "June 2026", type: "Group" },
       {
         title: "Final Report",
         submitted: "April 2026",

@@ -1,3 +1,5 @@
+import architectureDiagram from "../assets/architecture-diagram.png";
+
 const researchGaps = [
   {
     title: "No unified platform",
@@ -48,32 +50,84 @@ const methodologyComponents = [
 
 const technologies = [
   {
-    name: "Python",
-    image: "https://cdn.simpleicons.org/python/3776AB",
+    name: "LangGraph",
+    logoText: "LG",
   },
   {
-    name: "React Native",
+    name: "LightGBM",
+    logoText: "LGBM",
+  },
+  {
+    name: "SHAP",
+    logoText: "SHAP",
+  },
+  {
+    name: "MAPIE",
+    logoText: "MAPIE",
+  },
+  {
+    name: "OpenAI API",
+    logoText: "AI",
+  },
+  {
+    name: "FastAPI",
+    image: "https://cdn.simpleicons.org/fastapi/009688",
+  },
+  {
+    name: "React + Vite",
     image: "https://cdn.simpleicons.org/react/61DAFB",
   },
   {
-    name: "Jupyter Notebook",
-    image: "https://cdn.simpleicons.org/jupyter/F37626",
+    name: "Facebook Prophet",
+    logoText: "PRO",
+  },
+  {
+    name: "statsmodels",
+    logoText: "SM",
+  },
+  {
+    name: "MLxtend",
+    logoText: "MLX",
+  },
+  {
+    name: "Apache Parquet",
+    image: "https://cdn.simpleicons.org/apache/CB2138",
+  },
+  {
+    name: "MongoDB Atlas",
+    image: "https://cdn.simpleicons.org/mongodb/47A248",
+  },
+  {
+    name: "PyTorch",
+    image: "https://cdn.simpleicons.org/pytorch/EE4C2C",
+  },
+  {
+    name: "Gymnasium",
+    logoText: "GYM",
   },
   {
     name: "Flask",
-    image: "https://cdn.simpleicons.org/flask/000000",
+    image: "https://cdn.simpleicons.org/flask/ffffff",
   },
   {
-    name: "Firebase",
-    image: "https://cdn.simpleicons.org/firebase/FFCA28",
+    name: "PostgreSQL",
+    image: "https://cdn.simpleicons.org/postgresql/4169E1",
   },
   {
-    name: "TensorFlow",
-    image: "https://cdn.simpleicons.org/tensorflow/FF6F00",
+    name: "Ethereum / Hyperledger",
+    image: "https://cdn.simpleicons.org/ethereum/627EEA",
   },
   {
-    name: "Solidity",
-    image: "https://cdn.simpleicons.org/solidity/363636",
+    name: "Pandas / NumPy",
+    image: "https://cdn.simpleicons.org/pandas/150458",
+  },
+  {
+    name: "WhatsApp Business API",
+    image: "https://cdn.simpleicons.org/whatsapp/25D366",
+  },
+  {
+    name: "Node.js",
+    image: "https://cdn.simpleicons.org/nodedotjs/5FA04E",
   },
 ];
 
@@ -261,13 +315,19 @@ export default function ResearchDetails() {
           <div className="tool-grid">
             {technologies.map((technology) => (
               <div key={technology.name} className="info-card tool-card">
-                <img
-                  src={technology.image}
-                  alt={technology.name}
-                  className="tool-card-image"
-                  loading="lazy"
-                  decoding="async"
-                />
+                {technology.image ? (
+                  <img
+                    src={technology.image}
+                    alt={technology.name}
+                    className="tool-card-image"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                ) : (
+                  <div className="tool-card-logo" aria-hidden="true">
+                    {technology.logoText}
+                  </div>
+                )}
                 <span>{technology.name}</span>
               </div>
             ))}
@@ -277,4 +337,3 @@ export default function ResearchDetails() {
     </section>
   );
 }
-import architectureDiagram from "../assets/architecture-diagram.png";
