@@ -12,7 +12,16 @@ const documentGroups = [
         type: "Group",
         href: "/docs/topic-assessment-form.pdf",
       },
-      { title: "Project Proposal", submitted: "Upload in progress", type: "Individual" },
+      {
+        title: "Project Proposal",
+        submitted: "Upload in progress",
+        downloads: [
+          {
+            type: "Individual Reports",
+            href: "https://drive.google.com/drive/folders/1ZumErNjjcRl7HTyssiud6-BsLFtjbHl1?usp=drive_link",
+          },
+        ],
+      },
       { title: "Status Document I", submitted: "Upload in progress", type: "Individual" },
       { title: "Status Document II", submitted: "Upload in progress", type: "Individual" },
       { title: "Research Paper", submitted: "June 2026", type: "Group" },
