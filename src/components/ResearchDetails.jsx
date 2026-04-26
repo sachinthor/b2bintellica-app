@@ -46,35 +46,6 @@ const methodologyComponents = [
   "Autonomous procurement negotiation using reinforcement learning, fairness, and trust management",
 ];
 
-const architectureLayers = [
-  {
-    title: "Input Layer",
-    items: ["Raw trade data", "Orders", "Inventory", "Supplier data"],
-  },
-  {
-    title: "AI & Intelligence Layer",
-    items: [
-      "Demand forecasting",
-      "Federated BI",
-      "Procurement negotiation",
-      "Route optimisation",
-    ],
-  },
-  {
-    title: "Trust & Automation Layer",
-    items: [
-      "Differential privacy",
-      "Zero-knowledge authentication",
-      "Blockchain verification",
-      "Smart contracts",
-    ],
-  },
-  {
-    title: "User Interface Layer",
-    items: ["Admin dashboard", "BI dashboards", "Logistics tracking", "Procurement view"],
-  },
-];
-
 const technologies = [
   {
     name: "Python",
@@ -251,21 +222,13 @@ export default function ResearchDetails() {
 
           <div className="methodology-panel info-card">
             <div className="methodology-copy">
-              <div className="architecture-diagram" aria-label="High level B2B INTELLICA system architecture">
-                {architectureLayers.map((layer, index) => (
-                  <div className="architecture-layer" key={layer.title}>
-                    <div className="architecture-layer-header">
-                      <span>{index + 1}</span>
-                      <strong>{layer.title}</strong>
-                    </div>
-                    <div className="architecture-layer-items">
-                      {layer.items.map((item) => (
-                        <span key={item}>{item}</span>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <img
+                src={architectureDiagram}
+                alt="High level overview of the integrated B2B INTELLICA platform"
+                className="architecture-diagram"
+                loading="lazy"
+                decoding="async"
+              />
               <p>Figure 2. High level overview of the integrated B2B INTELLICA platform</p>
             </div>
 
@@ -314,3 +277,4 @@ export default function ResearchDetails() {
     </section>
   );
 }
+import architectureDiagram from "../assets/architecture-diagram.png";

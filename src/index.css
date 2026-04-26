@@ -968,9 +968,14 @@ div[id] {
 }
 
 .architecture-diagram {
-  display: grid;
-  gap: 0.8rem;
-  padding: 1rem;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #ffffff;
+  box-shadow: var(--shadow);
 }
 
 .architecture-layer {
@@ -1206,6 +1211,7 @@ div[id] {
   align-items: center;
   min-height: 3rem;
   border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+  color: inherit;
 }
 
 .download-action-row:last-child {
@@ -1218,31 +1224,27 @@ div[id] {
   font-weight: 500;
 }
 
-.download-button {
-  min-width: auto;
-  min-height: auto;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
+.download-action-row strong {
   color: var(--cyan);
-  box-shadow: none;
   font-size: 1rem;
-  letter-spacing: 0;
-  text-transform: none;
+  font-weight: 800;
 }
 
-.download-button-muted {
-  background: transparent;
-  color: #747b86;
-}
-
-.download-button:hover,
-.download-button:focus-visible {
-  transform: none;
-  background: transparent;
+a.download-action-row:hover strong,
+a.download-action-row:focus-visible strong {
   color: #67e8f9;
-  box-shadow: none;
+}
+
+/* Hide browser-extension autofill overlays that label themselves "Fill". */
+[aria-label="Fill"],
+[title="Fill"],
+[data-testid*="fill" i],
+[class*="autofill" i],
+[class*="fill-button" i],
+[id*="autofill" i] {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
 
 .team-grid {
