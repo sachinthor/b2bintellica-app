@@ -81,7 +81,7 @@ export default function Contact() {
               For formal communication, use the team email address below or add
               the final institutional contact details before submission.
               <br />
-              <a href="mailto:team@b2bintelica.edu">team@b2bintelica.edu</a>
+              <a href="mailto:team.b2bintelica@gmail.com">team.b2bintelica@gmail.com</a>
             </p>
             <p>
               You can also list supervisor emails, department contacts, or a
