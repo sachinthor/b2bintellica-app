@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 96" role="img" aria-labelledby="title">
+  <title id="title">LangGraph logo style mark</title>
+  <rect width="160" height="96" rx="12" fill="#07111f"/>
+  <path d="M42 28h28l20 20h28" fill="none" stroke="#22d3ee" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M42 68h28l20-20" fill="none" stroke="#38bdf8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="42" cy="28" r="9" fill="#22c55e"/>
+  <circle cx="42" cy="68" r="9" fill="#0ea5e9"/>
+  <circle cx="118" cy="48" r="9" fill="#f97316"/>
+  <text x="80" y="87" text-anchor="middle" fill="#e0f2fe" font-family="Arial, sans-serif" font-size="15" font-weight="800" letter-spacing="2">LANGGRAPH</text>
+</svg>

@@ -51,23 +51,24 @@ const methodologyComponents = [
 const technologies = [
   {
     name: "LangGraph",
-    logoText: "LG",
+    image: "/tech/langgraph.svg",
   },
   {
     name: "LightGBM",
-    logoText: "LGBM",
+    image: "/tech/lightgbm.svg",
   },
   {
     name: "SHAP",
-    logoText: "SHAP",
+    image: "/tech/shap.svg",
   },
   {
     name: "MAPIE",
-    logoText: "MAPIE",
+    image: "/tech/mapie.svg",
   },
   {
     name: "OpenAI API",
     logoText: "AI",
+    theme: "ai",
   },
   {
     name: "FastAPI",
@@ -78,16 +79,14 @@ const technologies = [
     image: "https://cdn.simpleicons.org/react/61DAFB",
   },
   {
-    name: "Facebook Prophet",
-    logoText: "PRO",
-  },
-  {
     name: "statsmodels",
     logoText: "SM",
+    theme: "stats",
   },
   {
     name: "MLxtend",
     logoText: "MLX",
+    theme: "ml",
   },
   {
     name: "Apache Parquet",
@@ -104,6 +103,7 @@ const technologies = [
   {
     name: "Gymnasium",
     logoText: "GYM",
+    theme: "rl",
   },
   {
     name: "Flask",
@@ -315,19 +315,22 @@ export default function ResearchDetails() {
           <div className="tool-grid">
             {technologies.map((technology) => (
               <div key={technology.name} className="info-card tool-card">
-                {technology.image ? (
-                  <img
-                    src={technology.image}
-                    alt={technology.name}
-                    className="tool-card-image"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                ) : (
-                  <div className="tool-card-logo" aria-hidden="true">
-                    {technology.logoText}
-                  </div>
-                )}
+                <div
+                  className={`tool-card-visual tool-visual-${technology.theme || "icon"}`}
+                  aria-hidden="true"
+                >
+                  {technology.image ? (
+                    <img
+                      src={technology.image}
+                      alt=""
+                      className="tool-card-image"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  ) : (
+                    <div className="tool-card-logo">{technology.logoText}</div>
+                  )}
+                </div>
                 <span>{technology.name}</span>
               </div>
             ))}

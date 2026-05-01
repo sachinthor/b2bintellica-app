@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 96" role="img" aria-labelledby="title">
+  <title id="title">MAPIE logo style mark</title>
+  <rect width="160" height="96" rx="12" fill="#100b1d"/>
+  <path d="M32 64c16-26 34-34 53-24 20 10 30 2 43-18" fill="none" stroke="#c084fc" stroke-width="8" stroke-linecap="round"/>
+  <path d="M32 72c16-26 34-34 53-24 20 10 30 2 43-18" fill="none" stroke="#38bdf8" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+  <path d="M32 56c16-26 34-34 53-24 20 10 30 2 43-18" fill="none" stroke="#f97316" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+  <circle cx="80" cy="48" r="14" fill="#e0f2fe"/>
+  <text x="80" y="53" text-anchor="middle" fill="#111827" font-family="Arial, sans-serif" font-size="11" font-weight="900">PI</text>
+  <text x="80" y="87" text-anchor="middle" fill="#f3e8ff" font-family="Arial, sans-serif" font-size="18" font-weight="900" letter-spacing="4">MAPIE</text>
+</svg>

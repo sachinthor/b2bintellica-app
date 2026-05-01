@@ -30,6 +30,18 @@ const documentGroups = [
         submitted: "April 2026",
         downloads: [
           { type: "Group", href: "/docs/final-group-report-2026.pdf" },
+          {
+            type: "IT22332530 - Madusanka R.R.V",
+            href: "/docs/madusanka-final-thesis-draft-report.pdf",
+          },
+          {
+            type: "IT22282286 - Vithana V A S",
+            href: "/docs/vithana-final-report-draft-2026.pdf",
+          },
+          {
+            type: "IT22034236 - De Silva K G G C",
+            href: "/docs/de-silva-final-report.pdf",
+          },
         ],
       },
     ],
@@ -57,7 +69,12 @@ const documentGroups = [
         type: "Group",
         href: "/docs/progress-presentation-2.pptx",
       },
-      { title: "Final Presentation", submitted: "Upload in progress", type: "Group" },
+      {
+        title: "Final Presentation",
+        submitted: "April 2026",
+        type: "Group",
+        href: "/docs/final-presentation-2026.pptx",
+      },
     ],
   },
   {

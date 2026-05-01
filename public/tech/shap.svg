@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 96" role="img" aria-labelledby="title">
+  <title id="title">SHAP logo style mark</title>
+  <rect width="160" height="96" rx="12" fill="#160d08"/>
+  <g transform="translate(30 20)">
+    <rect x="0" y="5" width="26" height="10" rx="5" fill="#fb923c"/>
+    <rect x="18" y="23" width="66" height="10" rx="5" fill="#38bdf8"/>
+    <rect x="9" y="41" width="95" height="10" rx="5" fill="#f97316"/>
+    <circle cx="72" cy="10" r="9" fill="#e0f2fe"/>
+    <circle cx="34" cy="28" r="9" fill="#e0f2fe"/>
+    <circle cx="89" cy="46" r="9" fill="#e0f2fe"/>
+  </g>
+  <text x="80" y="87" text-anchor="middle" fill="#ffedd5" font-family="Arial, sans-serif" font-size="18" font-weight="900" letter-spacing="4">SHAP</text>
+</svg>
