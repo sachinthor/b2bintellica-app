@@ -24,24 +24,18 @@ const documentGroups = [
       },
       { title: "Status Document I", submitted: "Upload in progress", type: "Individual" },
       { title: "Status Document II", submitted: "Upload in progress", type: "Individual" },
-      { title: "Research Paper", submitted: "June 2026", type: "Group" },
+      {
+        title: "Research Paper",
+        submitted: "June 2026",
+        type: "Group",
+        href: "https://drive.google.com/drive/folders/1QL0wMIrlGdTJk8XDs6dC944BzKXeuITI",
+      },
       {
         title: "Final Report",
         submitted: "April 2026",
         downloads: [
           { type: "Group", href: "/docs/final-group-report-2026.pdf" },
-          {
-            type: "IT22332530 - Madusanka R.R.V",
-            href: "/docs/madusanka-final-thesis-draft-report.pdf",
-          },
-          {
-            type: "IT22282286 - Vithana V A S",
-            href: "/docs/vithana-final-report-draft-2026.pdf",
-          },
-          {
-            type: "IT22034236 - De Silva K G G C",
-            href: "/docs/de-silva-final-report.pdf",
-          },
+          { type: "Individual Reports", href: "https://drive.google.com/drive/folders/1fdYPOTjHNQjxXAJjsV89etB-qcLxDaxA" },
         ],
       },
     ],
