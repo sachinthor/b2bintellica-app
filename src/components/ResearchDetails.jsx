@@ -66,31 +66,32 @@ const technologies = [
     image: "/tech/mapie.svg",
   },
   {
-    name: "OpenAI API",
-    logoText: "AI",
-    theme: "ai",
+    name: "LangChain-OpenAI",
+    image: "/tech/langchain-openai.svg",
+  },
+  {
+    name: "WhatsApp Business API",
+    image: "https://cdn.simpleicons.org/whatsapp/25D366",
+  },
+  {
+    name: "Facebook Prophet",
+    image: "/tech/prophet.svg",
+  },
+  {
+    name: "statsmodels",
+    image: "/tech/statsmodels.svg",
+  },
+  {
+    name: "MLxtend",
+    image: "/tech/mlxtend.svg",
+  },
+  {
+    name: "Apache Parquet",
+    image: "/tech/parquet.svg",
   },
   {
     name: "FastAPI",
     image: "https://cdn.simpleicons.org/fastapi/009688",
-  },
-  {
-    name: "React + Vite",
-    image: "https://cdn.simpleicons.org/react/61DAFB",
-  },
-  {
-    name: "statsmodels",
-    logoText: "SM",
-    theme: "stats",
-  },
-  {
-    name: "MLxtend",
-    logoText: "MLX",
-    theme: "ml",
-  },
-  {
-    name: "Apache Parquet",
-    image: "https://cdn.simpleicons.org/apache/CB2138",
   },
   {
     name: "MongoDB Atlas",
@@ -102,8 +103,7 @@ const technologies = [
   },
   {
     name: "Gymnasium",
-    logoText: "GYM",
-    theme: "rl",
+    image: "/tech/gymnasium.svg",
   },
   {
     name: "Flask",
@@ -115,19 +115,19 @@ const technologies = [
   },
   {
     name: "Ethereum / Hyperledger",
-    image: "https://cdn.simpleicons.org/ethereum/627EEA",
+    image: "/tech/hyperledger.svg",
+  },
+  {
+    name: "React + Vite",
+    image: "https://cdn.simpleicons.org/react/61DAFB",
   },
   {
     name: "Pandas / NumPy",
     image: "https://cdn.simpleicons.org/pandas/150458",
   },
   {
-    name: "WhatsApp Business API",
-    image: "https://cdn.simpleicons.org/whatsapp/25D366",
-  },
-  {
-    name: "Node.js",
-    image: "https://cdn.simpleicons.org/nodedotjs/5FA04E",
+    name: "pytest + pytest-asyncio",
+    image: "https://cdn.simpleicons.org/pytest/0A9EDC",
   },
 ];
 

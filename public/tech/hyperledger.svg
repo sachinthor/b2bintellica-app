@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 96" role="img" aria-labelledby="title">
+  <title id="title">Ethereum Hyperledger logo style mark</title>
+  <rect width="160" height="96" rx="12" fill="#0f172a"/>
+  <path d="M80 13l28 36-28 17-28-17z" fill="#8b5cf6"/>
+  <path d="M80 13v53l28-17z" fill="#38bdf8" opacity=".78"/>
+  <path d="M52 55l28 28 28-28-28 17z" fill="#c084fc"/>
+  <text x="80" y="91" text-anchor="middle" fill="#ede9fe" font-family="Arial, sans-serif" font-size="12" font-weight="900" letter-spacing="1.5">ETH / LEDGER</text>
+</svg>

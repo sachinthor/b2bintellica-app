@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 96" role="img" aria-labelledby="title">
+  <title id="title">statsmodels logo style mark</title>
+  <rect width="160" height="96" rx="12" fill="#0b1220"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M34 68h92" stroke="#475569" stroke-width="4"/>
+    <path d="M42 68V26" stroke="#475569" stroke-width="4"/>
+    <path d="M48 61c13-24 25-31 37-21 10 8 19 6 30-8" stroke="#38bdf8" stroke-width="7"/>
+    <path d="M50 54l17 8 17-26 17 15 20-22" stroke="#f97316" stroke-width="4" opacity=".9"/>
+  </g>
+  <text x="80" y="88" text-anchor="middle" fill="#e0f2fe" font-family="Arial, sans-serif" font-size="13" font-weight="900" letter-spacing="1.5">STATSMODELS</text>
+</svg>

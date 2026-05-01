@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 96" role="img" aria-labelledby="title">
+  <title id="title">Facebook Prophet logo style mark</title>
+  <rect width="160" height="96" rx="12" fill="#08111f"/>
+  <path d="M28 66c16-20 31-30 46-30 16 0 23 19 38 19 9 0 15-6 20-15" fill="none" stroke="#60a5fa" stroke-width="7" stroke-linecap="round"/>
+  <path d="M28 75h104" stroke="#1d4ed8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M39 25h82" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" opacity=".72"/>
+  <circle cx="75" cy="36" r="8" fill="#f97316"/>
+  <text x="80" y="88" text-anchor="middle" fill="#dbeafe" font-family="Arial, sans-serif" font-size="15" font-weight="900" letter-spacing="2">PROPHET</text>
+</svg>

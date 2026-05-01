@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 96" role="img" aria-labelledby="title">
+  <title id="title">Apache Parquet logo style mark</title>
+  <rect width="160" height="96" rx="12" fill="#111113"/>
+  <g transform="translate(38 20)">
+    <rect x="0" y="0" width="84" height="42" rx="8" fill="#1f2937" stroke="#f97316" stroke-width="4"/>
+    <path d="M21 0v42M42 0v42M63 0v42" stroke="#38bdf8" stroke-width="4"/>
+    <path d="M0 14h84M0 28h84" stroke="#64748b" stroke-width="3"/>
+  </g>
+  <text x="80" y="88" text-anchor="middle" fill="#fed7aa" font-family="Arial, sans-serif" font-size="15" font-weight="900" letter-spacing="2">PARQUET</text>
+</svg>
