@@ -22,11 +22,20 @@ const documentGroups = [
           },
         ],
       },
-      { title: "Status Document I", submitted: "Upload in progress", type: "Individual" },
-      { title: "Status Document II", submitted: "Upload in progress", type: "Individual" },
+      {
+        title: "Status Document I",
+        submitted: "April 2026",
+        type: "Group",
+        href: "/docs/ms-planner-b2b-intellica.pdf",
+      },
+      {
+        title: "Final Thesis",
+        submitted: "Coming soon",
+        type: "Group and Individual",
+      },
       {
         title: "Research Paper",
-        submitted: "June 2026",
+        submitted: "April 2026",
         type: "Research Paper",
         href: "https://drive.google.com/drive/folders/1QL0wMIrlGdTJk8XDs6dC944BzKXeuITI",
       },
@@ -170,7 +179,7 @@ export default function Documents() {
                     <article key={row.title} className="download-row">
                       <div className="download-card-header">
                         <h4>{row.title}</h4>
-                        <p>Submitted on {row.submitted}</p>
+                        <p>{row.submitted === "Coming soon" ? "Coming soon" : `Submitted on ${row.submitted}`}</p>
                       </div>
 
                       <div className="download-actions">
