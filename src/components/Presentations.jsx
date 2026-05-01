@@ -5,7 +5,6 @@ const presentations = [
     title: "Proposal Presentation",
     date: "September 2025",
     type: "Group",
-    slides: 32,
     status: "Available",
     href: "/docs/project-proposal.pptx",
   },
@@ -13,7 +12,6 @@ const presentations = [
     title: "Progress Presentation 1 (PP1)",
     date: "January 2026",
     type: "Group",
-    slides: 46,
     status: "Available",
     href: "/docs/progress-presentation-1.pptx",
   },
@@ -21,7 +19,6 @@ const presentations = [
     title: "Progress Presentation 2 (PP2)",
     date: "March 2026",
     type: "Group",
-    slides: 54,
     status: "Available",
     href: "/docs/progress-presentation-2.pptx",
   },
@@ -29,8 +26,8 @@ const presentations = [
     title: "Final Presentation",
     date: "May 2026",
     type: "Group",
-    slides: 60,
-    status: "Pending",
+    status: "Available",
+    href: "/docs/final-presentation-2026.pptx",
   },
 ];
 
@@ -57,9 +54,6 @@ export default function Presentations() {
                   loading="lazy"
                   decoding="async"
                 />
-                <div className="presentation-overlay">
-                  <strong>{item.slides} Slides</strong>
-                </div>
               </div>
 
               <div className="presentation-copy">

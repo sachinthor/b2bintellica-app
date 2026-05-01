@@ -27,14 +27,14 @@ const documentGroups = [
       {
         title: "Research Paper",
         submitted: "June 2026",
-        type: "Group",
+        type: "Research Paper",
         href: "https://drive.google.com/drive/folders/1QL0wMIrlGdTJk8XDs6dC944BzKXeuITI",
       },
       {
         title: "Final Report",
         submitted: "April 2026",
         downloads: [
-          { type: "Group", href: "/docs/final-group-report-2026.pdf" },
+          { type: "Group", href: "/docs/final-group-report-2026.docx" },
           { type: "Individual Reports", href: "https://drive.google.com/drive/folders/1fdYPOTjHNQjxXAJjsV89etB-qcLxDaxA" },
         ],
       },
