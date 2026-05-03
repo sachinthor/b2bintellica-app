@@ -23,7 +23,7 @@ const documentGroups = [
         ],
       },
       {
-        title: "Status Document I",
+        title: "Status Document",
         submitted: "April 2026",
         type: "Group",
         href: "/docs/ms-planner-b2b-intellica.pdf",
