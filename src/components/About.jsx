@@ -29,16 +29,13 @@ const team = [
 const supervisors = [
   {
     name: "Samanthi Siriwardena",
-    position: "Academic Supervisor",
-    education: "Supervisor",
+    position: "Supervisor",
     institute: "York St John University, London, UK",
-    department: "Research Supervision",
     image: "/team/Samanthi Siriwardhana Supervisor.jpeg",
   },
   {
     name: "Ishara Weerathunga",
     position: "Co-supervisor",
-    education: "Co-supervisor",
     institute: "Sri Lanka Institute of Information Technology (SLIIT)",
     department: "Department of Information Technology",
     image: "/team/Ishara Weerathunga Co-Supervisor.jpeg",
@@ -79,10 +76,10 @@ export default function About() {
               </div>
               <h3>{person.name}</h3>
               <div className="member-details">
-                {person.position && <p>{person.position}</p>}
-                <p>{person.education}</p>
-                <p>{person.institute}</p>
-                <p>{person.department}</p>
+                {person.position && <p className="member-role">{person.position}</p>}
+                {person.education && <p>{person.education}</p>}
+                {person.institute && <p>{person.institute}</p>}
+                {person.department && <p>{person.department}</p>}
               </div>
             </article>
           ))}

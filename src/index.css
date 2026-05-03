@@ -1430,7 +1430,7 @@ a.download-action-row:focus-visible strong {
   margin: 0;
 }
 
-.member-details p:first-child {
+.member-details .member-role {
   color: var(--cyan);
   font-family: "JetBrains Mono", Consolas, monospace;
   font-size: 0.78rem;

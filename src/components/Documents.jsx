@@ -179,7 +179,12 @@ export default function Documents() {
                     <article key={row.title} className="download-row">
                       <div className="download-card-header">
                         <h4>{row.title}</h4>
-                        <p>{row.submitted === "Coming soon" ? "Coming soon" : `Submitted on ${row.submitted}`}</p>
+                        <p>
+                          {row.submitted === "Coming soon" ||
+                          row.submitted === "Upload in progress"
+                            ? row.submitted
+                            : `Submitted on ${row.submitted}`}
+                        </p>
                       </div>
 
                       <div className="download-actions">
