@@ -32,6 +32,8 @@ const presentations = [
 ];
 
 export default function Presentations() {
+  const assetPath = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+
   return (
     <section id="presentations" className="content-section presentations-section">
       <div className="section-shell">
@@ -66,7 +68,7 @@ export default function Presentations() {
                 <span className="presentation-status">{item.status}</span>
                 {item.href && (
                   <a
-                    href={item.href}
+                    href={assetPath(item.href)}
                     className="presentation-link"
                     target="_blank"
                     rel="noreferrer"

@@ -132,6 +132,9 @@ const technologies = [
 ];
 
 export default function ResearchDetails() {
+  const assetPath = (path) =>
+    path?.startsWith("http") ? path : `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+
   return (
     <section id="research" className="content-section research-section">
       <div className="section-shell">
@@ -321,7 +324,7 @@ export default function ResearchDetails() {
                 >
                   {technology.image ? (
                     <img
-                      src={technology.image}
+                      src={assetPath(technology.image)}
                       alt=""
                       className="tool-card-image"
                       loading="lazy"

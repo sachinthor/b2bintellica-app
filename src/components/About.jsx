@@ -45,6 +45,8 @@ const supervisors = [
 const people = [...supervisors, ...team];
 
 export default function About() {
+  const assetPath = (path) => `${import.meta.env.BASE_URL}${path}`;
+
   return (
     <section id="about" className="content-section about-section">
       <div className="section-shell">
@@ -67,7 +69,7 @@ export default function About() {
               <div className="profile-media">
                 {person.image && (
                   <img
-                    src={person.image}
+                    src={assetPath(person.image.replace(/^\//, ""))}
                     alt={person.name}
                     loading="lazy"
                     decoding="async"

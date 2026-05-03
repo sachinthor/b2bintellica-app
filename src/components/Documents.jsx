@@ -91,6 +91,9 @@ const documentGroups = [
 ];
 
 export default function Documents() {
+  const assetPath = (path) =>
+    path?.startsWith("http") ? path : `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+
   useEffect(() => {
     const hideInjectedFillButtons = () => {
       const hideElement = (element) => {
@@ -192,7 +195,7 @@ export default function Documents() {
                           item.href ? (
                             <a
                               key={item.type}
-                              href={item.href}
+                              href={assetPath(item.href)}
                               className="download-action-row"
                               target="_blank"
                               rel="noreferrer"

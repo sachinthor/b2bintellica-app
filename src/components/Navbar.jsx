@@ -13,13 +13,14 @@ const navItems = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const assetPath = (path) => `${import.meta.env.BASE_URL}${path}`;
 
   return (
     <header className="site-header">
       <nav className="section-shell nav-shell" aria-label="Primary">
         <a href="#home" className="brand-mark" onClick={() => setIsOpen(false)}>
           <img
-            src="/reference/cognify-logo.png"
+            src={assetPath("reference/cognify-logo.png")}
             alt=""
             className="brand-logo"
             aria-hidden="true"
