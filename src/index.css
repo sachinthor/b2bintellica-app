@@ -436,20 +436,11 @@ div[id] {
   line-height: 1.75;
 }
 
-.hero-text,
-.section-intro p,
 .scope-copy p,
-.overview-card p,
-.research-card p,
 .problem-card p,
-.objective-card p,
-.download-heading p,
-.contact-details p,
-.demo-copy p,
-.footer-shell p,
-.question-card p,
-.scope-media p,
-.methodology-copy p {
+.reference-block li,
+.methodology-panel > div > p,
+.demo-copy p {
   text-align: justify;
   text-justify: inter-word;
 }
