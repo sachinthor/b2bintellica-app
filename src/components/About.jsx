@@ -32,6 +32,8 @@ const supervisors = [
     position: "Supervisor",
     institute: "York St John University, London, UK",
     image: "/team/Samanthi Siriwardhana Supervisor.jpeg",
+    linkedin:
+      "https://www.linkedin.com/in/samanthi-rubasin-siriwardana-80327935",
   },
   {
     name: "Ishara Weerathunga",
@@ -39,6 +41,7 @@ const supervisors = [
     institute: "Sri Lanka Institute of Information Technology (SLIIT)",
     department: "Department of Information Technology",
     image: "/team/Ishara Weerathunga Co-Supervisor.jpeg",
+    linkedin: "https://www.linkedin.com/in/ishara-weerathunga-05569aa2",
   },
 ];
 
@@ -82,6 +85,16 @@ export default function About() {
                 {person.education && <p>{person.education}</p>}
                 {person.institute && <p>{person.institute}</p>}
                 {person.department && <p>{person.department}</p>}
+                {person.linkedin && (
+                  <a
+                    href={person.linkedin}
+                    className="profile-link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    LinkedIn Profile
+                  </a>
+                )}
               </div>
             </article>
           ))}
